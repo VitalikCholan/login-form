@@ -14,12 +14,12 @@
     <div class="container">
         <img src="images/girl.png" alt="girl">
 
-        <form action="/" method="GET">
+        <form action="/" id="form" method="GET">
             <h1>Sign Up</h1>
 
             <div class="full-name">
                 <label for="full-name">Full Name</label>
-                <input type="text" name="full-name" id="full-name" placeholder="Name..." required>
+                <input type="text" name="full-name" id="full-name" placeholder="Name...">
                 <i class="fa-solid fa-square-check success-icon"></i>
                 <i class="fa-solid fa-circle-exclamation failure-icon"></i>
                 <div class="error"></div>
@@ -27,7 +27,7 @@
 
             <div class="email">
                 <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Email address..." required>   
+                <input type="email" name="email" id="email" placeholder="Email address...">   
                 <i class="fa-solid fa-square-check success-icon"></i>
                 <i class="fa-solid fa-circle-exclamation failure-icon"></i>
                 <div class="error"></div>
@@ -35,7 +35,7 @@
 
             <div class="username">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Username..." required>
+                <input type="text" name="username" id="username" placeholder="Username...">
                 <i class="fa-solid fa-square-check success-icon"></i>
                 <i class="fa-solid fa-circle-exclamation failure-icon"></i>
                 <div class="error"></div>
@@ -43,7 +43,7 @@
 
             <div class="password">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="************" required>
+                <input type="password" name="password" id="password" placeholder="************">
                 <i class="fa-solid fa-square-check success-icon"></i>
                 <i class="fa-solid fa-circle-exclamation failure-icon"></i>
                 <div class="error"></div>
@@ -51,14 +51,14 @@
 
             <div class="repeat-password">
                 <label for="repeat-password">Repeat Password</label>
-                <input type="password" id="repeat-password" name="repeat-password" placeholder="************" required>
+                <input type="password" name="repeat-password" id="repeat-password"  placeholder="************">
                 <i class="fa-solid fa-square-check success-icon"></i>
                 <i class="fa-solid fa-circle-exclamation failure-icon"></i>
                 <div class="error"></div>
             </div>
 
             <div class="agree">
-                <input type="checkbox" name="terms" id="terms" required>
+                <input type="checkbox" name="terms" id="terms">
                 <label for="terms">I agree to the <span>Terms of User</span></label>
                 <i class="fa-solid fa-square-check success-icon"></i>
                 <i class="fa-solid fa-circle-exclamation failure-icon"></i>
@@ -71,5 +71,6 @@
             <div>
         </form>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
