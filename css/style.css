@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,15 +25,19 @@ h1{
     font-size: 2.5rem;
 }
 
+div{
+    margin-bottom: 1em;
+}
+
 label{
     font-size: 1.2rem;
+    display: block;
 }
 
 input{
     padding-bottom: 0.5em;
     border: none;
     border-bottom: 0.5px solid black;
-    margin-bottom: 1em;
     font-size: 1.5rem;
 }
 
@@ -41,9 +46,18 @@ input:focus{
 }
 
 input[type=text], input[type=email], input[type=password]{
-    display: block;
     margin-top: 0.5em;
-    width: 17em;
+    width: 100%;
+}
+
+div {
+    position: relative;
+}
+
+div i{
+    position: absolute;
+    right: 5px;
+    top: 42px;
 }
 
 input[type=checkbox]{
@@ -55,6 +69,10 @@ input[type=checkbox]:hover{
     cursor: pointer;
 }
 
+.agree label{
+    display: inline;
+}
+
 span{
     font-weight: 600;
 }
@@ -62,6 +80,38 @@ span{
 span:hover{
     color: orange;
     cursor: pointer;
+}
+
+.agree{
+    position: relative;
+}
+
+.agree i{
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+.success-icon, .failure-icon{
+    opacity: 0;
+}
+
+.success-icon{
+    color: green;
+}
+
+.failure-icon{
+    color: red;
+}
+
+.error{
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+}
+
+div:last-of-type{
+    margin-bottom: 0;
 }
 
 button{
@@ -100,9 +150,9 @@ button{
         display: flex;
         flex-direction: column;
     }
-    
-    button {
-        padding: 0.5em 4.2em;
+
+    button{
+        padding: 0.5em 3.2em;
     }
 }
      

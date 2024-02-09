@@ -8,58 +8,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/94d4b51bbe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-        <div class="container">
+    <div class="container">
+        <img src="images/girl.png" alt="girl">
 
-            <img src="images/girl.png" alt="girl">
+        <form action="/" method="GET">
+            <h1>Sign Up</h1>
 
-            <form>
-                <h1>Sign Up</h1>
+            <div class="full-name">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Name..." required>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <div class="error"></div>
+            </div>
 
-                <section class="contact-info">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email address..." required>   
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <div class="error"></div>
+            </div>
 
-                    <label for="full-name">Full Name
-                    <input type="text" name="full-name" id="full-name" placeholder="Name...">
-                    </label>
-                    
-                    <label for="email">Email
-                    <input type="email" name="email" placeholder="Email address...">
-                    </label>
+            <div class="username">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username..." required>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <div class="error"></div>
+            </div>
 
-                    <label for="username">Username
-                    <input type="text" name="username" id="username" placeholder="Username...">
-                    </label>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="************" required>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <div class="error"></div>
+            </div>
 
-                </section>
+            <div class="repeat-password">
+                <label for="repeat-password">Repeat Password</label>
+                <input type="password" id="repeat-password" name="repeat-password" placeholder="************" required>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <div class="error"></div>
+            </div>
 
-                <section class="password">
+            <div class="agree">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">I agree to the <span>Terms of User</span></label>
+                <i class="fa-solid fa-square-check success-icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <div class="error"></div>
+            </div>
 
-                    <label for="password">Password
-                    <input type="password" id="pwd" name="pwd" placeholder="************">
-                    </label>
-
-                    <label for="full-name">Repeat Password
-                    <input type="password" id="pwd" name="pwd" placeholder="************">
-                    </label>
-
-                </section>
-
-                <section class="agree">
-
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms">I agree to the <span>Terms of User</span></label>
-
-                <section class="submit">
-
-                    <button type="submit" class="btn-1">Sign Up</button>
-
-                    <button type="submit" class="btn-2">Sign In &#129066</button>
-
-                </section>
-            </form>
-        </div>
-    </main>
+            <div class="submit">
+                <button type="submit" class="btn-1">Sign Up</button>
+                <button type="submit" class="btn-2">Sign In &#129066</button>
+            <div>
+        </form>
+    </div>
 </body>
 </html>
