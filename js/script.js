@@ -4,6 +4,7 @@ const errorMessages = document.querySelectorAll('.error');
 const successIcons = document.querySelectorAll('.success-icon');
 const failureIcons = document.querySelectorAll('.failure-icon');
 
+const fullNameRegex = /^[a-zA-z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)* [a-zA-Z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)* [a-zA-Z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)*$/;
 const emailRegex = /^([a-z0-9\.-]+)@([a-z0-9-]+)\.([a-z]{3,8})$/;
 
 //For password validation
@@ -16,7 +17,11 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if(inputs[0].value.trim() === '' || inputs[0].value.trim() === null){
-        errorMessages[0].innerText = 'Name is required';
+        errorMessages[0].innerText = 'Full name is required';
+        successIcons[0].style.opacity = '0';
+        failureIcons[0].style.opacity = '1';
+    } else if(!fullNameRegex.test(inputs[0].value)){
+        errorMessages[0].innerText = 'Provide a full name';
         successIcons[0].style.opacity = '0';
         failureIcons[0].style.opacity = '1';
     } else{
