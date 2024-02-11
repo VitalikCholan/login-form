@@ -16,7 +16,7 @@ img{
     object-fit: cover;
 }
 
-form {
+form{
     padding: 0 3em;
 }
 
@@ -27,6 +27,11 @@ h1{
 
 div{
     margin-bottom: 1em;
+    position: relative;
+}
+
+.full-name, .email, .username, .password, .repeat-password{
+    height: 6em;
 }
 
 label{
@@ -48,10 +53,6 @@ input:focus{
 input[type=text], input[type=email], input[type=password]{
     margin-top: 0.5em;
     width: 100%;
-}
-
-div {
-    position: relative;
 }
 
 div i{
@@ -105,8 +106,9 @@ span:hover{
 }
 
 .error{
+    margin-top: 5px;
     color: red;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 div:last-of-type{
@@ -161,10 +163,6 @@ button{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .submit{
-        flex-wrap: wrap;
     }
 }         
 
