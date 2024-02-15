@@ -23,6 +23,7 @@ form{
 h1{
     font-weight: 800;
     font-size: 2.5rem;
+    letter-spacing: 3px;
 }
 
 div{
@@ -36,6 +37,7 @@ div{
 
 label{
     font-size: 1.2rem;
+    letter-spacing: 1px;
     display: block;
 }
 
@@ -44,6 +46,7 @@ input{
     border: none;
     border-bottom: 0.5px solid black;
     font-size: 1.5rem;
+    letter-spacing: 2px;
 }
 
 input:focus{
@@ -109,6 +112,7 @@ span:hover{
     margin-top: 5px;
     color: red;
     font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 div:last-of-type{
@@ -116,9 +120,10 @@ div:last-of-type{
 }
 
 button{
-    padding: 0.5em 3.3em;
+    padding: 0.5em 2.8em;
     margin-bottom: 1em;
     font-size: 1.2rem;
+    letter-spacing: 2px;
 }
 
 .btn-1{
@@ -146,24 +151,15 @@ button{
     cursor: pointer;
 }
      
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1115px){
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
-    button{
-        padding: 0.5em 3.3em;
-    }
 }
 
-@media screen and (min-width: 1051px) and (max-width: 1115px){
-    button{
-        padding: 0.5em 1.7em;
-    }
-}
 
  
 
