@@ -32,7 +32,7 @@ div {
 }
 
 .full-name, .email, .username, .password, .repeat-password {
-    height: 6em;
+    height: 6.5em;
 }
 
 label {

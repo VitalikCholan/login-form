@@ -1,20 +1,21 @@
 const form = document.querySelector('#form');
-const inputs = document.querySelectorAll('input');
-const errorMessages = document.querySelectorAll('.error');
-const successIcons = document.querySelectorAll('.success-icon');
-const failureIcons = document.querySelectorAll('.failure-icon');
-
-const fullNameRegex = /^[a-zA-z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)* [a-zA-Z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)* [a-zA-Z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)*$/;
-const emailRegex = /^([a-z0-9\.-]+)@([a-z0-9-]+)\.([a-z]{3,8})$/;
-
-//For password validation
-const lowercaseRegex = /[a-z]/;
-const uppercaseRegex = /[A-Z]/;
-const numberRegex = /[0-9]/;
-const symbolRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    const inputs = document.querySelectorAll('input');
+    const errorMessages = document.querySelectorAll('.error');
+    const successIcons = document.querySelectorAll('.success-icon');
+    const failureIcons = document.querySelectorAll('.failure-icon');
+
+    const fullNameRegex = /^[a-zA-z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)* [a-zA-Z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)* [a-zA-Z]+(?:['’][a-zA-Z]+)*(?:[-][a-zA-Z]+)*$/;
+    const emailRegex = /^([a-z0-9\.-]+)@([a-z0-9-]+)\.([a-z]{3,8})$/;
+
+    //For password validation
+    const lowercaseRegex = /[a-z]/;
+    const uppercaseRegex = /[A-Z]/;
+    const numberRegex = /[0-9]/;
+    const symbolRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
     if(inputs[0].value.trim() === '' || inputs[0].value.trim() === null){
         errorMessages[0].innerText = 'Full name is required';
