@@ -64,11 +64,11 @@ form.addEventListener('submit', (e) => {
         successIcons[3].style.opacity = '0';
         failureIcons[3].style.opacity = '1';
     } else if(!lowercaseRegex.test(inputs[3].value)){
-        errorMessages[3].innerText = 'Password must contain at least one lowercase letter';
+        errorMessages[3].innerText = 'Password must contain at least 1 lowercase letter';
         successIcons[3].style.opacity = '0';
         failureIcons[3].style.opacity = '1';
     } else if(!uppercaseRegex.test(inputs[3].value)){
-        errorMessages[3].innerText = 'Password must contain at least one uppercase letter';
+        errorMessages[3].innerText = 'Password must contain at least 1 uppercase letter';
         successIcons[3].style.opacity = '0';
         failureIcons[3].style.opacity = '1';
     } else if(!numberRegex.test(password.value)){

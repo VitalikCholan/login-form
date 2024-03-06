@@ -141,6 +141,7 @@ span:hover {
 
 .success-icon, .failure-icon {
     opacity: 0;
+    font-size: 1.2rem;
 }
 
 .success-icon {
