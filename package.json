@@ -1,0 +1,14 @@
+{
+  "name": "login-form",
+  "version": "1.0.0",
+  "description": "This project is a custom login form implemented using HTML, CSS, and JavaScript. It provides a simple and intuitive interface for users to sign up and sign in to an application.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cholan Vitaliy",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

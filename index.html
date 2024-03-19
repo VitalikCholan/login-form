@@ -1,77 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/94d4b51bbe.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/94d4b51bbe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <img src="images/girl.png" alt="girl">
+      <img src="images/girl.png" alt="girl" />
 
-        <form id="form" method="Post">
-            <h1>Sign Up</h1>
+      <form id="form" method="post">
+        <h1>Sign Up</h1>
 
-            <div class="full-name">
-                <label for="full-name">Full Name</label>
-                <input type="text" name="full-name" id="full-name" placeholder="Name...">
-                <i class="fa-solid fa-square-check success-icon"></i>
-                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
-                <div class="error"></div>
-            </div>
+        <div class="full-name">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            placeholder="Name..."
+          />
+          <i class="fa-solid fa-square-check success-icon"></i>
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <div class="error"></div>
+        </div>
 
-            <div class="email">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email address...">   
-                <i class="fa-solid fa-square-check success-icon"></i>
-                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
-                <div class="error"></div>
-            </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address..."
+          />
+          <i class="fa-solid fa-square-check success-icon"></i>
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <div class="error"></div>
+        </div>
 
-            <div class="username">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Username...">
-                <i class="fa-solid fa-square-check success-icon"></i>
-                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
-                <div class="error"></div>
-            </div>
+        <div class="username">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username..."
+          />
+          <i class="fa-solid fa-square-check success-icon"></i>
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <div class="error"></div>
+        </div>
 
-            <div class="password">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="************">
-                <i class="fa-solid fa-square-check success-icon"></i>
-                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
-                <div class="error"></div>
-            </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="************"
+          />
+          <i class="fa-solid fa-square-check success-icon"></i>
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <div class="error"></div>
+        </div>
 
-            <div class="repeat-password">
-                <label for="repeat-password">Repeat Password</label>
-                <input type="password" name="repeat-password" id="repeat-password"  placeholder="************">
-                <i class="fa-solid fa-square-check success-icon"></i>
-                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
-                <div class="error"></div>
-            </div>
+        <div class="repeat-password">
+          <label for="repeat-password">Repeat Password</label>
+          <input
+            type="password"
+            name="repeat-password"
+            id="repeat-password"
+            placeholder="************"
+          />
+          <i class="fa-solid fa-square-check success-icon"></i>
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <div class="error"></div>
+        </div>
 
-            <div class="agree">
-                <input type="checkbox" name="terms" id="terms">
-                <label for="terms" class="custom-checkbox">I agree to the <span>Terms of User</span></label>
-                <i class="fa-solid fa-square-check success-icon"></i>
-                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
-                <div class="error"></div>
-            </div>
+        <div class="agree">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms" class="custom-checkbox"
+            >I agree to the <span>Terms of User</span></label
+          >
+          <i class="fa-solid fa-square-check success-icon"></i>
+          <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+          <div class="error"></div>
+        </div>
 
-            <div class="submit">
-                <button type="submit" class="btn-1">Sign Up</button>
-                <button type="submit" class="btn-2">Sign In &#129066</button>
-            <div>
-        </form>
+        <div class="submit">
+          <button type="submit" class="btn-1">Sign Up</button>
+          <button type="submit" class="btn-2">Sign In &#129066;</button>
+        </div>
+      </form>
     </div>
-    
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
