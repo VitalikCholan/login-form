@@ -37,4 +37,3 @@ Cholan Vitaliy - [My GitHub Profile](https://github.com/VitalikCholan)
 ## Acknowledgments:
 
 - Special thanks to Font Awesome for providing the icons used in this project.
-- Inspiration for this project was drawn from various login form designs and tutorials available online.
