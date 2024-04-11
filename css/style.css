@@ -223,6 +223,6 @@ button {
 @media screen and (max-width: 600px) {
   .success-icon,
   .failure-icon {
-    display: none;
+    visibility: hidden;
   }
 }
