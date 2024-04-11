@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -56,9 +56,9 @@ input:focus {
   background-color: gold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input[type='text'],
+input[type='email'],
+input[type='password'] {
   margin-top: 0.5em;
   width: 100%;
 }
@@ -69,12 +69,12 @@ div i {
   top: 42px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 0.8em;
   height: 0.8em;
 }
 
-input[type="checkbox"]:hover {
+input[type='checkbox']:hover {
   cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ span:hover {
 }
 
 .agree .custom-checkbox::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -123,7 +123,7 @@ span:hover {
 }
 
 .agree .custom-checkbox::after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
   left: 7px;
@@ -170,8 +170,15 @@ div:last-of-type {
   margin-bottom: 0;
 }
 
+.submit {
+  display: grid;
+  grid-template-columns: auto-fit, minmax(10px, 1fr);
+  grid-template-areas: 'btn-1 btn-2';
+  gap: 1em;
+}
+
 button {
-  padding: 0.5em 2.8em;
+  padding: 0.5em;
   margin-bottom: 1em;
   font-size: 1.2rem;
   letter-spacing: 2px;
@@ -185,6 +192,7 @@ button {
   background-size: 200%;
   background-position: right;
   transition: background-position, 0.5s;
+  grid-area: btn-1;
 }
 
 .btn-1:hover {
@@ -194,6 +202,7 @@ button {
 
 .btn-2 {
   background-color: white;
+  grid-area: btn-2;
   border: none;
 }
 
@@ -209,4 +218,7 @@ button {
     align-items: center;
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 385px) {
 }
