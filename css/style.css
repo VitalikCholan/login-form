@@ -228,6 +228,25 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  input[type='checkbox'] {
+    cursor: none;
+  }
+
+  span {
+    color: orange;
+    cursor: none;
+  }
+
+  .btn-1 {
+    background-position: right;
+    cursor: none;
+  }
+
+  .btn-2 {
+    color: inherit;
+    cursor: none;
+  }
+
   .success-icon,
   .failure-icon {
     visibility: hidden;
