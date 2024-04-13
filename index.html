@@ -18,12 +18,11 @@
   </head>
   <body>
     <div class="container">
-      <img
-        src="images/girl.png"
-        srcset="images/girl-600.png 600w, images/girl.png 1000w"
-        sizes="(max-width: 600px) 600px, 1000px "
-        alt="girl"
-      />
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/girl-small.png" />
+        <source media="(max-width: 900px)" srcset="images/girl-medium.png" />
+        <img src="images/girl.png" alt="girl" />
+      </picture>
 
       <form id="form" method="POST">
         <h1>Sign Up</h1>

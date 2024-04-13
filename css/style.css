@@ -226,3 +226,9 @@ button {
     visibility: hidden;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .password {
+    height: 7.5em;
+  }
+}
