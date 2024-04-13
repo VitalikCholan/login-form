@@ -213,7 +213,7 @@ button {
 }
 
 .fa-arrow-right {
-  position: absolute;
+  position: sticky;
   top: 27%;
   right: 17%;
 }
