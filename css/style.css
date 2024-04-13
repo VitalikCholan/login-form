@@ -229,6 +229,6 @@ button {
 
 @media screen and (max-width: 500px) {
   .password {
-    height: 7.5em;
+    height: 7em;
   }
 }
