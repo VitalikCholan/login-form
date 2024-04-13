@@ -213,7 +213,7 @@ button {
 }
 
 .fa-arrow-right {
-  position: sticky;
+  position: absolute;
   top: 27%;
   right: 17%;
 }
@@ -231,6 +231,12 @@ button {
   .success-icon,
   .failure-icon {
     visibility: hidden;
+  }
+
+  .fa-arrow-right {
+    position: sticky;
+    top: 27%;
+    right: 17%;
   }
 }
 
