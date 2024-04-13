@@ -204,11 +204,18 @@ button {
   background-color: white;
   grid-area: btn-2;
   border: none;
+  position: relative;
 }
 
 .btn-2:hover {
   color: orange;
   cursor: pointer;
+}
+
+.fa-arrow-right {
+  position: absolute;
+  top: 27%;
+  right: 17%;
 }
 
 @media screen and (max-width: 1115px) {
