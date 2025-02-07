@@ -4,7 +4,20 @@
 
 This project is a custom login form implemented using HTML, CSS, and JavaScript. It provides a simple and intuitive interface for users to sign up and sign in to an application.
 
+🔗 **Live Demo:** [Custom Login Form](https://login-form-with-pretty-girl.netlify.app/)
+
+## Preview:
+
+<img src="screenshots/login_form_1.png" alt="Login Form" width="600px">
+
+<img src="screenshots/login_form_2.png" alt="Login Form" width="600px">
+
+<img src="screenshots/login_form_3.png" alt="Login Form Responsive Design" width="300px">
+
+<img src="screenshots/login_form_4.png" alt="Login Form Responsive Design" width="300px">
+
 ## Features:
+
 
 - Sign Up Functionality: Users can input their full name, email, username, and password to sign up for an account.
 - Validation: The form incorporates validation for each input field to ensure data integrity.
