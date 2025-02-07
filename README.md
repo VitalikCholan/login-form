@@ -33,6 +33,21 @@ This project is a custom login form implemented using HTML, CSS, and JavaScript.
 - CSS: Styling language utilized for visual presentation and layout.
 - JavaScript: Programming language employed for form validation and interactivity.
 - Font Awesome: Icon library utilized for decorative icons within the form.
+- Netlify: Platform used for deploying and hosting the project with continuous deployment from GitHub.
+- Playwright: Testing framework used for cross-browser testing and automation.
+
+## Testing:
+
+The project uses Playwright (@playwright/test) for automated browser testing. This ensures the login form works correctly across different browsers including:
+- Chromium
+- Firefox
+- WebKit (Safari)
+
+Tests verify form validation, user interactions, and responsive design functionality.
+
+## Deployment:
+
+This project is deployed on Netlify with automatic deployments from the main branch. You can view the live project here: [Custom Login Form](https://login-form-with-pretty-girl.netlify.app/)
 
 ## Contribution Guidelines:
 
