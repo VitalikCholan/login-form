@@ -8,13 +8,14 @@ This project is a custom login form implemented using HTML, CSS, and JavaScript.
 
 ## Preview:
 
-<img src="screenshots/login_form_1.png" alt="Login Form" width="600px">
+<img src="screenshots/login_form_1.png" alt="Login Form" width="700px">
 
-<img src="screenshots/login_form_2.png" alt="Login Form" width="600px">
+<img src="screenshots/login_form_2.png" alt="Login Form" width="700px">
 
-<img src="screenshots/login_form_3.png" alt="Login Form Responsive Design" width="300px">
-
-<img src="screenshots/login_form_4.png" alt="Login Form Responsive Design" width="300px">
+<div style="display: flex; gap: 10px;">
+  <img src="screenshots/login_form_3.png" alt="Login Form Responsive Design" width="300px">
+  <img src="screenshots/login_form_4.png" alt="Login Form Responsive Design" width="300px">
+</div>
 
 ## Features:
 
